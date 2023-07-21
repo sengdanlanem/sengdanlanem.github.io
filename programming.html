@@ -3,7 +3,9 @@
         <title>
             My programming 
         </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <style>
+            
             body {
                 background-color: lightblue;
             } 
@@ -14,14 +16,69 @@
             p {
                 font-family: "Sofia", sans-serif;
             }
+            .mystyle {
+                background-color: rgba(21, 127, 123, 0.807);
+            }
         </style>
+        <script>
+            function add() {
+                x = document.getElementById("x").value
+                x = Number(x)
+                y = document.getElementById("y").value
+                y = Number(y)
+                alert(x+y)
+            }
+            function subtract() {
+                x = document.getElementById("x").value
+                x = Number(x)
+                y = document.getElementById("y").value
+                y = Number(y)
+                alert(x-y)
+            } 
+            function multiply() {
+                x = document.getElementById("x").value
+                x = Number(x)
+                y = document.getElementById("y").value
+                y = Number(y)
+                alert(x*y)
+            }
+            function divide() {
+                x = document.getElementById("x").value
+                x = Number(x)
+                y = document.getElementById("y").value
+                y = Number(y)
+                alert(x/y)
+            }
+            function powerof() {
+                x = document.getElementById("x").value
+                x = Number(x)
+                y = document.getElementById("y").value
+                y = Number(y)
+                alert(x**y)
+            }
+        </script>
     </head>
     <body>
         <h1>
             SengDan Lanem
         </h1>
+        <p class="mystyle">
+            This is my first caculator
+        
+        </p>
         <p>
-            Hello
+            <button type="button" onclick=" alert('hello from SengDan')">Click Me!</button>
+            <button type="button" onclick="add()">add</button>
+            <button type="button" onclick="subtract()">subtract</button>
+            <button type="button" onclick="multiply()">multiply</button>
+            <button type="button" onclick="divide()">divide</button>
+            <button type="button" onclick="powerof()">powerof</button>
+        </p>
+        <p>
+            <label for="x">x:</label><br>
+            <input type="text" id="x" name="x"><br>
+            <label for="y">y:</label><br>
+            <input type="text" id="y" name="y">
         </p>
         <p>
             <a href="index.html">home </a>
