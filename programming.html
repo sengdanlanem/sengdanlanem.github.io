@@ -3,58 +3,48 @@
         <title>
             My programming 
         </title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-        <style>
-            
-            body {
-                background-color: lightblue;
-            } 
-            h1 {
-                background-color: rgba(0, 162, 255, 0.656);
-                text-align: center;
-            }
-            p {
-                font-family: "Sofia", sans-serif;
-            }
-            .mystyle {
-                background-color: rgba(21, 127, 123, 0.807);
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
+       
         <script>
             function add() {
                 x = document.getElementById("x").value
                 x = Number(x)
                 y = document.getElementById("y").value
                 y = Number(y)
-                alert(x+y)
+                let result =x+y;
+                document.getElementById("result").innerHTML = result;
             }
             function subtract() {
                 x = document.getElementById("x").value
                 x = Number(x)
                 y = document.getElementById("y").value
                 y = Number(y)
-                alert(x-y)
+                let result = x-y;
+                document.getElementById("result").innerHTML = result;
             } 
             function multiply() {
                 x = document.getElementById("x").value
                 x = Number(x)
                 y = document.getElementById("y").value
                 y = Number(y)
-                alert(x*y)
+                let result = x * y;
+                document.getElementById("result").innerHTML = result;
             }
             function divide() {
                 x = document.getElementById("x").value
                 x = Number(x)
                 y = document.getElementById("y").value
                 y = Number(y)
-                alert(x/y)
+                let result = x / y;
+                document.getElementById("result").innerHTML = result;
             }
             function powerof() {
                 x = document.getElementById("x").value
                 x = Number(x)
                 y = document.getElementById("y").value
                 y = Number(y)
-                alert(x**y)
+                let result = x ** y; 
+                document.getElementById("result").innerHTML = result;
             }
         </script>
     </head>
@@ -62,6 +52,11 @@
         <h1>
             SengDan Lanem
         </h1>
+        <p class="menu">
+            <a href="index.html">Home</a> |
+            <a href="programming.html"> Programming  </a>
+        </p>
+
         <p class="mystyle">
             This is my first caculator
         
@@ -81,7 +76,12 @@
             <input type="text" id="y" name="y">
         </p>
         <p>
-            <a href="index.html">home </a>
+            <div>
+                result
+            </div>
+            <div id="result">
+                xxx
+            </div>
         </p>
     </body>
 </html>
