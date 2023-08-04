@@ -46,6 +46,20 @@
                 let result = x ** y; 
                 document.getElementById("result").innerHTML = result;
             }
+            function display_numbers() {
+                let numbers = ""
+                for ( let i =0; i <20; i++) {
+                    numbers=numbers+ "<br>" + i
+                }
+                document.getElementById("my_text").innerHTML = numbers
+            }
+            function display_stars() {
+                let numbers = ""
+                for ( let i =0; i <20; i++) {
+                    numbers=numbers+ "<br>" + "*"
+                }
+                document.getElementById("my_text").innerHTML = numbers
+            }
         </script>
     </head>
     <body>
@@ -81,6 +95,15 @@
             </div>
             <div id="result">
                 xxx
+            </div>
+        </p>
+        <p>
+            <button type="button" onclick="display_numbers()">display numbers</button>
+            <button type="button" onclick="display_stars()">display stars</button>
+        </p>
+        <p>    
+            <div id="my_text">
+                yyy
             </div>
         </p>
     </body>
