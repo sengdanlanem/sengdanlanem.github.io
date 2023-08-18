@@ -60,6 +60,16 @@
                 }
                 document.getElementById("my_text").innerHTML = numbers
             }
+            function display_rectangles() {
+                let numbers = ""
+                for ( let i =0; i <6; i++) {
+                    for ( let j =0; j <5; j++) {
+                        numbers=numbers+ "*"
+                    }
+                    numbers=numbers+"<br/>"
+                }
+                document.getElementById("my_text").innerHTML = numbers
+            }
         </script>
     </head>
     <body>
@@ -100,6 +110,7 @@
         <p>
             <button type="button" onclick="display_numbers()">display numbers</button>
             <button type="button" onclick="display_stars()">display stars</button>
+            <button type="button" onclick="display_rectangles()">display rectangle</button>
         </p>
         <p>    
             <div id="my_text">
