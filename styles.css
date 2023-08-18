@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body {
     background-color: rgb(193, 230, 173);
+    font-family: 'Montserrat', sans-serif;
 } 
 h1 {
     background-color: rgba(0, 162, 255, 0.656);
     text-align: center;
-}
-p {
-    font-family: "Sofia", sans-serif;
 }
 .menu {
     border: 2px solid black;
