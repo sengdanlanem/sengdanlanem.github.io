@@ -70,6 +70,16 @@
                 }
                 document.getElementById("my_text").innerHTML = numbers
             }
+            function test_loop() {
+                let numbers = ""
+                for ( let i =0; i <6; i++) {
+                    for ( let j =0; j <5; j++) {
+                        numbers=numbers+ " " + j
+                    }
+                    numbers=numbers+"<br/>"
+                }
+                document.getElementById("my_text").innerHTML = numbers
+            }
         </script>
     </head>
     <body>
@@ -112,6 +122,7 @@
             <button type="button" onclick="display_numbers()">display numbers</button>
             <button type="button" onclick="display_stars()">display stars</button>
             <button type="button" onclick="display_rectangles()">display rectangle</button>
+            <button type="button" onclick="test_loop()">display</button>
         </p>
         <p>    
             <div id="my_text">
